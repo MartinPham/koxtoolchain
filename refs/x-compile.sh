@@ -446,7 +446,7 @@ case ${KINDLE_TC} in
 	K3 )
 		ARCH_FLAGS="-march=armv6j -mtune=arm1136jf-s -mfpu=vfp -mfloat-abi=softfp"
 		CROSS_TC="arm-kindle-linux-gnueabi"
-		TC_BUILD_DIR="${HOME}/Kindle/CrossTool/Build_${KINDLE_TC}"
+		TC_BUILD_DIR="${PREFIX}"
 
 		# Export it for our CMakeCross TC file
 		export CROSS_TC
@@ -557,7 +557,7 @@ case ${KINDLE_TC} in
 	K5 )
 		ARCH_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp -mthumb"
 		CROSS_TC="arm-kindle5-linux-gnueabi"
-		TC_BUILD_DIR="${HOME}/Kindle/CrossTool/Build_${KINDLE_TC}"
+		TC_BUILD_DIR="${PREFIX}"
 
 		# Export it for our CMakeCross TC file
 		export CROSS_TC
@@ -624,7 +624,7 @@ case ${KINDLE_TC} in
 	PW2 )
 		ARCH_FLAGS="-march=armv7-a -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp -mthumb"
 		CROSS_TC="arm-kindlepw2-linux-gnueabi"
-		TC_BUILD_DIR="${HOME}/Kindle/CrossTool/Build_${KINDLE_TC}"
+		TC_BUILD_DIR="${PREFIX}"
 
 		# Export it for our CMakeCross TC file
 		export CROSS_TC
@@ -733,7 +733,7 @@ case ${KINDLE_TC} in
 		case ${KINDLE_TC} in
 			KOBO )
 				CROSS_TC="arm-kobo-linux-gnueabihf"
-				TC_BUILD_DIR="${HOME}/Kindle/CrossTool/Build_${KINDLE_TC}"
+				TC_BUILD_DIR="${PREFIX}"
 			;;
 			NICKEL )
 				CROSS_TC="arm-nickel-linux-gnueabihf"
@@ -746,11 +746,11 @@ case ${KINDLE_TC} in
 			;;
 			MK7 )
 				CROSS_TC="arm-kobomk7-linux-gnueabihf"
-				TC_BUILD_DIR="${HOME}/Kindle/CrossTool/Build_${KINDLE_TC}"
+				TC_BUILD_DIR="${PREFIX}"
 			;;
 			MK8 )
 				CROSS_TC="arm-kobomk8-linux-gnueabihf"
-				TC_BUILD_DIR="${HOME}/Kindle/CrossTool/Build_${KINDLE_TC}"
+				TC_BUILD_DIR="${PREFIX}"
 			;;
 		esac
 
@@ -863,7 +863,7 @@ case ${KINDLE_TC} in
 	REMARKABLE )
 		ARCH_FLAGS="-march=armv7-a -mtune=cortex-a9 -mfpu=neon -mfloat-abi=hard -mthumb"
 		CROSS_TC="arm-remarkable-linux-gnueabihf"
-		TC_BUILD_DIR="${HOME}/Kindle/CrossTool/Build_${KINDLE_TC}"
+		TC_BUILD_DIR="${PREFIX}"
 
 		# Export it for our CMakeCross TC file
 		export CROSS_TC
@@ -928,7 +928,7 @@ case ${KINDLE_TC} in
 		#       AFAICT, the official SDK doesn't make a specific choice on that front (i.e., it passes neither -marm not -mthumb. That usually means ARM)...
 		ARCH_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp -mthumb"
 		CROSS_TC="arm-pocketbook-linux-gnueabi"
-		TC_BUILD_DIR="${HOME}/Kindle/CrossTool/Build_${KINDLE_TC}"
+		TC_BUILD_DIR="${PREFIX}"
 
 		# Export it for our CMakeCross TC file
 		export CROSS_TC
@@ -996,7 +996,7 @@ case ${KINDLE_TC} in
 	CY )
 		ARCH_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp -mthumb"
 		CROSS_TC="arm-bookeen-linux-gnueabi"
-		TC_BUILD_DIR="${HOME}/Kindle/CrossTool/Build_${KINDLE_TC}"
+		TC_BUILD_DIR="${PREFIX}"
 
 		# Export it for our CMakeCross TC file
 		export CROSS_TC
